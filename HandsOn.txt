@@ -1,0 +1,95 @@
+1) Write a program which prints the following information about at least 5 persons:
+	NAME  MAIL-ID  EMPLOYEE-CODE  PHONE
+	Eg. Umesh  umesh@cse  p03161  25764728
+	Salil      salil@cse     p03160  25764728
+	Each entry should be on a separate line.
+
+2)Write a program that prints the following line on the screen along with quotes.
+“Can we print ‘\’ with System.out.println() statement?”
+
+
+3) Create a small program that defines some fields. Try creating some illegal field names and see what kind of error the compiler produces. Use the naming rules and conventions as a guide.
+
+4)In the program you created in Exercise 3, try leaving the fields uninitialized and print out their values. Try the same with a local variable and see what kind of compiler errors you can produce. Becoming familiar with common compiler errors will make it easier to recognize bugs in your code.
+
+5) Write Program to show MAX,MIN & SIZE of Primitive Data Type.
+
+6) Write Program with multiple Static and Instance Block,using this print some messages.
+
+7)Consider the following code snippet.
+
+int i = 10;
+int n = i++%5;
+
+    What are the values of i and n after the code is executed?
+    What are the final values of i and n if instead of using the postfix increment operator (i++), you use the prefix version (++i))?
+
+
+8) Change the following program to use compound assignments:
+
+class ArithmeticDemo {
+
+     public static void main (String[] args){
+          
+          int result = 1 + 2; // result is now 3
+          System.out.println(result);
+
+          result = result - 1; // result is now 2
+          System.out.println(result);
+
+          result = result * 2; // result is now 4
+          System.out.println(result);
+
+          result = result / 2; // result is now 2
+          System.out.println(result);
+
+          result = result + 8; // result is now 10
+          result = result % 7; // result is now 3
+          System.out.println(result);
+     }
+}
+
+
+
+9) In the following program, explain why the value "6" is printed twice in a row:
+
+class PrePostDemo {
+    public static void main(String[] args){
+        int i = 3;
+        i++;
+        System.out.println(i);    // "4"
+        ++i;                     
+        System.out.println(i);    // "5"
+        System.out.println(++i);  // "6"
+        System.out.println(i++);  // "6"
+        System.out.println(i);    // "7"
+    }
+}
+
+
+10) Identify the following kinds of expression statements:
+
+    aValue = 8933.234;
+    aValue++;
+    System.out.println("Hello World!");
+    Bicycle myBike = new Bicycle();
+
+
+Write Programms and share code via github
+
+11) Find ASCII Value of a character 'X' and 'x'
+
+12) Write Program to Compute Quotient and Remainder
+
+13) Swap two numbers using temporary variable
+
+14) Write Program to Check Whether a Number is Even or Odd - 88,37,1658
+
+15)Check whether an alphabet is vowel or consonant using if..else statement - a,b,e,o
+
+16) Write Programm to calculate GST i.e. 18% on base price 34900/-
+
+17) Write programm to calculate monthly simple intrest and compound intrest on amount - 161258/-
+
+18) Write program to generate equated monthly instalments (EMI) of 3 year and 5 year of amount 161258/-
+
