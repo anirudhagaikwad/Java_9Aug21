@@ -1,0 +1,14 @@
+Must be solve all questions and deploy all programms on github - Duration 3 Hr. 
+Start Time : 8:30 AM 
+
+1) Reverse a String and print it on console
+   "Java Skills" .
+
+2) Assign String to x variable in DD-MM-YYYY format
+   extract and print Year from String.
+
+3)In a small company, the average salary of three employees is Rs1000 per week. If one employee earns Rs1100 and other earns Rs500, how much will the third employee earn? Solve by using java programm
+
+4) Write Program - convert a percentage to a fraction (To convert a percentage into fraction let say 30% to a fraction)
+
+5)Write Program - A train 340 m long is running at a speed of 45 km/hr. what time will it take to cross a 160 m long tunnel?
