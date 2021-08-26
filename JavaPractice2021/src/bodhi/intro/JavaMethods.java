@@ -6,7 +6,7 @@ package bodhi.intro;
 /**
  * @author Vaishnavi
  * 
- * Understand Java Methods
+ * Understand Java Methods &  Java Polymorphism
  *
  */
 public class JavaMethods {

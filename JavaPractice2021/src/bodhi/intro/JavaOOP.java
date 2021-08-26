@@ -9,8 +9,8 @@ package bodhi.intro;
  * Class : 
  * Object :
  * Inheritance:
- * Interface :
- * Abstract:
+ * Java Constructor
+ 
  * 
  *
  */
@@ -24,7 +24,10 @@ public class JavaOOP {
 		
 //create object
 		Bicycle bike1=new Bicycle();	
-		Bicycle bike2=new Bicycle();	
+		Bicycle bike2=new Bicycle();
+		
+		Bicycle bike3=new Bicycle(2,3,4);
+		Bicycle bike4=new Bicycle(2,3,4,45);
 		
 		// invoke methods 
 		bike1.changeCadence(50);
@@ -39,6 +42,27 @@ public class JavaOOP {
 		bike2.printState();
 		
 		
+		
+		// Single Inheritance
+		
+		MountainBicycle mountbike= new MountainBicycle();
+		
+		mountbike.mountBicy();
+		
+		
+		// multilevel Inheritance
+		
+		RoadBicycle roadbike= new RoadBicycle();
+		
+		roadbike.RoadBicy();
+		
+		
+		//  hierarchical Inheritance
+		
+		KidsBicycle kidbike= new KidsBicycle();
+		
+		kidbike.kidsBicy();
+		
 
 	} //end main
 
@@ -51,6 +75,37 @@ class Bicycle
 	int cadence=0;
 	int speed = 0;
 	int gear=1;
+	int height=0;
+	
+	
+	/* 1)Non-Parameterize Constructor(Default) 2)Parameterize Constructor */
+	
+	Bicycle()
+	{
+		System.out.println("Default Constructor");
+		 
+	}//end default constructor
+	
+	
+	Bicycle(int x,int y,int z)
+	{
+		
+		 cadence=x;
+		 speed=y ;
+		 gear=z;
+		
+	}//end Parameterize constructor
+	
+	
+	Bicycle(int x,int y,int z,int he)
+	{
+		
+		 cadence=x;
+		 speed=y ;
+		 gear=z;
+		 height=he;
+		
+	}//end Parameterize constructor
 	
 	
 	void changeCadence(int newValu) {
@@ -84,3 +139,113 @@ class Bicycle
 			
 	
 }// end bicycle
+
+
+
+
+
+
+
+// Inheritance 
+// Superclass - Child Class
+/*
+ * Types Inheritance : Single,multilevel ,hierarchical 
+ * 
+ */
+
+class MountainBicycle extends Bicycle //Single Inheritance 
+{
+	
+void mountBicy()
+{
+	MountainBicycle obj1= new MountainBicycle();
+	// invoke methods 
+	obj1.changeCadence(50);
+	obj1.changeGear(2);
+	obj1.speedUp(10);
+	obj1.printState();
+	
+
+} // end mountBicy()
+} //end MountainBicycle
+
+
+class RoadBicycle extends MountainBicycle  // multilevel Inheritance 
+{
+	
+	void RoadBicy()
+	{
+		RoadBicycle obj1= new RoadBicycle();
+		// invoke methods 
+		obj1.changeCadence(50);
+		obj1.changeGear(2);
+		obj1.speedUp(10);
+		obj1.printState();
+		
+
+	} // end RoadBicy()
+	
+}//end RoadBicycle
+
+
+
+class KidsBicycle extends Bicycle  // hierarchical Inheritance 
+
+{
+	
+	void kidsBicy()
+	{
+		KidsBicycle obj1= new KidsBicycle();
+		// invoke methods 
+		obj1.changeCadence(50);
+		obj1.changeGear(2);
+		obj1.speedUp(10);
+		obj1.printState();
+		
+
+	} // end kidsBicy()
+	
+	
+	
+} //end KidsBicycle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
