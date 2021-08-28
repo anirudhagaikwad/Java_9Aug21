@@ -1,0 +1,8 @@
+1) Write a program to print the area of Oval,Triangle,Rectangle,Pentagon,Hexagon,Trapezium,& Circle
+in this program you must be use all OOP concepts i.e.
+- Class,Object,Inheritance,Interface,Polymorphisam,Abstaction.
+
+
+2)Write a program to generate employee ID-Card(image not required,id card show on console) using Java OOP Consepts. 
+
+
