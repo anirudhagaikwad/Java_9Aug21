@@ -25,7 +25,6 @@ public class JavaException {
 	 *  Object -->Throwable-->Exception---> IOException
 	 *                                      ClassNotFound
 	 *                                      SQLException
-	 *                                      RuntimeException --->
 	 *                                                            ArithmaticException
 	 *                                                            ClassCastException
 	 *                                                            NullPointerException
@@ -43,8 +42,32 @@ public class JavaException {
 	int[] intArray2;
 	
 	 
+	 // Syntax of throw
+	// throw new excseptionClass("error message");
+	
+	void checkElgib(int stuage,int stuweight)
+	{
+		
+		if(stuage<12 && stuweight<40)
+		{
+			throw new ArithmeticException("Student is not eligible for registration");
+		}
+		else {
+			System.out.println("Entry is valid!");
+		}
+	}
 	 
-	 
+	
+	
+	void myMethod() throws ArithmeticException,NullPointerException
+	{
+	//statements 	
+		
+	}
+	
+	
+	
+	
 	
 	int num1,num2;
 	
@@ -122,7 +145,18 @@ public class JavaException {
 		obj.exceptionHandling();
 		
 		obj.exceptionHandlingMultCatch();
+		obj.checkElgib(15, 20);
 		
+		try {
+		obj.myMethod(); } catch(ArithmeticException e) {
+			
+			//exception handling message
+			
+		}
+catch(NullPointerException e) {
+			
+	//exception handling message
+		}
 	
 	} //end main
 
