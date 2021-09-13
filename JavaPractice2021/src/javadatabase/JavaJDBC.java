@@ -29,7 +29,8 @@ public class JavaJDBC {
 	{
 		try {
 		Class.forName("com.mysql.jdbc.Driver");
-		Connection con =DriverManager.getConnection("jdbc:mysql:/localhost:3306/test","root","password");
+		Connection con =DriverManager.getConnection("jdbc:mysql:/localhost:3306/test?autoReconnect=true&useSSL=false","root","password");
+		//jdbc:mysql://localhost:3306/test?autoReconnect=true&useSSL=false
 		Statement s =con.createStatement();
 		
 		ResultSet rs=s.executeQuery("select * from student");
