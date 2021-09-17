@@ -1,0 +1,7 @@
+Project 
+
+Create Billing Syatem for Dr.Clinic
+as per following Application
+http://clinicbdemo.herokuapp.com/
+abcd - Admin@2021
+Use swing for same.
